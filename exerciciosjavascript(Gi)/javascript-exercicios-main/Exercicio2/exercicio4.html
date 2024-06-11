@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio4</title>
+</head>
+<body>
+
+    <script>
+       /*  var enquanto = 2
+        var soma = 0
+        var numero =  parseInt (prompt("Digite Um Numero"));
+        var maior = numero
+        var maior2 = 0
+
+        while(enquanto <= 3){
+            numero = parseInt(prompt("Digite um Numero"));
+
+        if(maior < numero){
+            maior = numero
+        }
+
+        else if(maior2 < numero){
+            maior2 = numero
+        }
+        enquanto++
+        }
+
+        alert(maior+maior2) */
+
+        var cont = 1
+        var soma = 0
+        var numeros = []
+
+        while(cont <= 3) {
+            var numero = parseInt(prompt(`Digite o ${cont}º numero`))
+            numeros.push(numero)
+
+
+            cont++
+        }
+        numeros.sort()
+        var resultado = numeros[numeros.length - 1] + numeros[numeros.length - 2]
+        console.log(numeros);
+        console.log(resultado);
+    </script>
+    
+</body>
+</html>
